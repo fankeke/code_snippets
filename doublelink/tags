@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__ADLIST_H__	adlist.h	2;"	d
+cc	Makefile	/^cc=gcc$/;"	m
+cflag	Makefile	/^cflag=-Wall -O0 -g$/;"	m
+create_list	list.c	/^void create_list()$/;"	f
+delete_list	list.c	/^void delete_list()$/;"	f
+deps	Makefile	/^deps=adlist.h$/;"	m
+direction	adlist.h	/^    int		 direction;$/;"	m	struct:__anon1
+displayall_list	list.c	/^void displayall_list()$/;"	f
+dup	adlist.h	/^    void *(*dup)(void*ptr);$/;"	m	struct:list
+dup_list	list.c	/^void dup_list()$/;"	f
+exe	Makefile	/^exe=list$/;"	m
+found_list	list.c	/^static list* found_list(listNode**pnode)$/;"	f	file:
+free	adlist.h	/^    void *(*free)(void*ptr);$/;"	m	struct:list
+head	adlist.h	/^    listNode	*head;$/;"	m	struct:list
+incs	Makefile	/^incs=-I .\/$/;"	m
+insert_list	list.c	/^void insert_list()$/;"	f
+len	adlist.h	/^    unsigned long len;$/;"	m	struct:list
+link	Makefile	/^link=$(cc)$/;"	m
+list	adlist.h	/^struct list{$/;"	s
+list	adlist.h	/^typedef struct list list;$/;"	t	typeref:struct:list
+listAddNodeHead	adlist.c	/^list*listAddNodeHead(list*list,void*value)$/;"	f
+listAddNodeTail	adlist.c	/^list*listAddNodeTail(list*list,void*value)$/;"	f
+listCreate	adlist.c	/^list* listCreate(void)$/;"	f
+listDelNode	adlist.c	/^void listDelNode(list*list,listNode*node)$/;"	f
+listDup	adlist.c	/^list *listDup(list*orig)$/;"	f
+listGetIterator	adlist.c	/^listIter* listGetIterator(list*list,int direction)$/;"	f
+listIndex	adlist.c	/^listNode*listIndex(list*list,long index)$/;"	f
+listInsertNode	adlist.c	/^list*listInsertNode(list*list,listNode*old_node,void*value,int after)$/;"	f
+listIter	adlist.h	/^}listIter;$/;"	t	typeref:struct:__anon1
+listLength	adlist.h	29;"	d
+listNext	adlist.c	/^listNode*listNext(listIter*iter)$/;"	f
+listNode	adlist.h	/^struct listNode{$/;"	s
+listNode	adlist.h	/^typedef struct listNode listNode;$/;"	t	typeref:struct:listNode
+listRelease	adlist.c	/^void listRelease(list*list)$/;"	f
+listReleaseIterator	adlist.c	/^void listReleaseIterator(listIter*iter)$/;"	f
+listRewind	adlist.c	/^void listRewind(list*list,listIter*li)$/;"	f
+listRewindTail	adlist.c	/^void listRewindTail(list*list,listIter*li)$/;"	f
+listRotate	adlist.c	/^void listRotate(list*list)$/;"	f
+listSearchKey	adlist.c	/^listNode*listSearchKey(list*list,void*key)$/;"	f
+listall	list.c	/^list	*listall;$/;"	v
+listposttraval	adlist.c	/^void listposttraval(list*list)$/;"	f
+listpretraval	adlist.c	/^void listpretraval(list*list)$/;"	f
+main	list.c	/^int main(int argc,char**argv)$/;"	f
+match	adlist.h	/^    int	 *(*match)(void*ptr,void*key);$/;"	m	struct:list
+name	adlist.h	/^    char	 name[10];$/;"	m	struct:list
+next	adlist.h	/^    listNode	*next;$/;"	m	struct:__anon1
+next	adlist.h	/^    listNode	*next;$/;"	m	struct:listNode
+obj	Makefile	/^obj=adlist.o list.o$/;"	m
+prev	adlist.h	/^    listNode	*prev;$/;"	m	struct:listNode
+print_list	list.c	/^void print_list()$/;"	f
+print_menu	list.c	/^void print_menu()$/;"	f
+tail	adlist.h	/^    listNode	*tail;$/;"	m	struct:list
+value	adlist.h	/^    void	*value;$/;"	m	struct:listNode

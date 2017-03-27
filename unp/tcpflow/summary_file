@@ -1,0 +1,21 @@
+fist packet:2014-10-05 21:07:59
+last packet:2014-10-05 21:51:21
+elapsed:	00:43:22
+packet:	21960
+length:	8243239bytes
+avg.packet/sec:	8.4397(packet/s)
+avg.packet size:375.3752(bytes/packets)
+avg.bytes/sec:	3168.0396(bytes/s)
+avg.MBit/sec:	3.0938(MBit/s)
+--------------------------
+type				packets				%Packets				Bytes				%Bytes
+arp				0				0.00%					0				0.00%
+ip				21960				100.00%					8243239				100.00%
+ icmp				24				0.11%					2254				0.03%
+ udp				867				3.95%					147567				1.79%
+  dns				865				3.94%					146635				1.78%
+ tcp				21069				95.94%					8093418				98.18%
+  http				4548				20.71%					4862415				58.99%
+  http-				9181				41.81%					598306				7.26%
+  ssl				2927				13.33%					2334614				28.32%
+  ssl-				0				0.00%					0				0.00%

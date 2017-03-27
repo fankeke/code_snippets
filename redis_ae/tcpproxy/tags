@@ -1,0 +1,298 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AE_ALL_EVENTS	ae.h	45;"	d
+AE_DONT_WAIT	ae.h	46;"	d
+AE_ERR	ae.h	37;"	d
+AE_FILE_EVENTS	ae.h	43;"	d
+AE_NOMORE	ae.h	48;"	d
+AE_NONE	ae.h	39;"	d
+AE_NOTUSED	ae.h	51;"	d
+AE_OK	ae.h	36;"	d
+AE_READABLE	ae.h	40;"	d
+AE_TIME_EVENTS	ae.h	44;"	d
+AE_WRITABLE	ae.h	41;"	d
+AF_LOCAL	anet.h	39;"	d
+ANET_CONNECT_NONBLOCK	anet.c	145;"	d	file:
+ANET_CONNECT_NONE	anet.c	144;"	d	file:
+ANET_ERR	anet.h	35;"	d
+ANET_ERR_LEN	anet.h	36;"	d
+ANET_H	anet.h	32;"	d
+ANET_OK	anet.h	34;"	d
+AllocBufferList	util.c	/^BufferList*AllocBufferList(int n)$/;"	f
+AllocClient	tcpproxy.c	/^proxy_client*AllocClient(int fd)$/;"	f
+AllocRemote	tcpproxy.c	/^proxy_client*AllocRemote(proxy_client*c)$/;"	f
+BIG_ENDIAN	config.h	50;"	d
+BUFFER_CHUNK_SIZE	util.h	4;"	d
+BYTE_ORDER	config.h	56;"	d
+BYTE_ORDER	config.h	66;"	d
+BYTE_ORDER	config.h	74;"	d
+BYTE_ORDER	config.h	76;"	d
+BufferList	util.h	/^typedef struct BufferList{$/;"	s
+BufferList	util.h	/^}BufferList;$/;"	t	typeref:struct:BufferList
+BufferListGetData	util.c	/^char*BufferListGetData(BufferList*blist,int*len)$/;"	f
+BufferListGetSpace	util.c	/^char*BufferListGetSpace(BufferList*blist,int*len)$/;"	f
+BufferListNode	util.h	/^typedef struct BufferListNode{$/;"	s
+BufferListNode	util.h	/^}BufferListNode;$/;"	t	typeref:struct:BufferListNode
+BufferListPop	util.c	/^void BufferListPop(BufferList*blist,int len)$/;"	f
+BufferListPush	util.c	/^void BufferListPush(BufferList*blist,int len)$/;"	f
+CLIENT_CLOSE_AFTER_SENT	tcpproxy.c	15;"	d	file:
+CloseAfterSent	tcpproxy.c	/^void CloseAfterSent(proxy_client*c)$/;"	f
+FreeClient	tcpproxy.c	/^void FreeClient(proxy_client*c)$/;"	f
+FreePolicy	policy.c	/^void FreePolicy(Policy *policy) {$/;"	f
+HAVE_BACKTRACE	config.h	20;"	d
+HAVE_EPOLL	config.h	25;"	d
+HAVE_KQUEUE	config.h	29;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	42;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	53;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	61;"	d
+HAVE_PROCFS	config.h	10;"	d
+HAVE_TASKINFO	config.h	15;"	d
+Hostent	policy.h	/^typedef struct Hostent {$/;"	s
+Hostent	policy.h	/^} Hostent;$/;"	t	typeref:struct:Hostent
+InitLogger	util.c	/^void InitLogger(LogLevel level,const char*filename)$/;"	f
+JEMALLOC_MANGLE	zmalloc.h	50;"	d
+LITTLE_ENDIAN	config.h	49;"	d
+LevelName	util.c	/^static const char *LevelName[]={$/;"	v	file:
+LogDebug	util.h	22;"	d
+LogError	util.h	17;"	d
+LogFatal	util.h	6;"	d
+LogInfo	util.h	12;"	d
+LogInternal	util.c	/^void LogInternal(LogLevel level,const char*fmt,...)$/;"	f
+LogLevel	util.h	/^typedef enum LogLevel{$/;"	g
+LogLevel	util.h	/^}LogLevel;$/;"	t	typeref:enum:LogLevel
+LogPrint	util.c	/^void LogPrint(LogLevel level,const char*fmt,...)$/;"	f
+MAX_WRITE_PER_EVENT	tcpproxy.c	16;"	d	file:
+OnError	tcpproxy.c	/^    void(*OnError)(struct proxy_client*c);$/;"	m	struct:proxy_client	file:
+OnRemoteDown	tcpproxy.c	/^    void(*OnRemoteDown)(struct proxy_client*c);$/;"	m	struct:proxy_client	file:
+PDP_ENDIAN	config.h	51;"	d
+PREFIX_SIZE	zmalloc.c	48;"	d	file:
+PREFIX_SIZE	zmalloc.c	51;"	d	file:
+PREFIX_SIZE	zmalloc.c	53;"	d	file:
+PROXY_HASH	policy.h	7;"	d
+PROXY_RR	policy.h	6;"	d
+ParseArgs	tcpproxy.c	/^void ParseArgs(int argc,char**argv)$/;"	f
+ParsePolicy	policy.c	/^Policy *ParsePolicy(const char *p) {$/;"	f
+Policy	policy.h	/^typedef struct Policy {$/;"	s
+Policy	policy.h	/^} Policy;$/;"	t	typeref:struct:Policy
+Proxy_AcceptTcpHandler	tcpproxy.c	/^void Proxy_AcceptTcpHandler(aeEventLoop*el,int fd,void*privdata,int mask)$/;"	f
+ReadIncome	tcpproxy.c	/^void ReadIncome(aeEventLoop*el,int fd,void*privdata,int mask)$/;"	f
+RemoteDown	tcpproxy.c	/^void RemoteDown(proxy_client*r)$/;"	f
+SendOutcome	tcpproxy.c	/^void SendOutcome(aeEventLoop*el,int fd,void*privdata,int mask)$/;"	f
+SetWriteEvent	tcpproxy.c	/^int SetWriteEvent(proxy_client*c)$/;"	f
+SignalHandler	tcpproxy.c	/^void SignalHandler(int signo)$/;"	f
+UpdateTime	util.c	/^static void UpdateTime()$/;"	f	file:
+ZMALLOC_LIB	zmalloc.h	39;"	d
+ZMALLOC_LIB	zmalloc.h	49;"	d
+ZMALLOC_LIB	zmalloc.h	66;"	d
+_BSD_SOURCE	fmacros.h	4;"	d
+_FILE_OFFSET_BITS	fmacros.h	13;"	d
+_LARGEFILE_SOURCE	fmacros.h	12;"	d
+_POLICY_H_	policy.h	2;"	d
+_REDIS_FMACRO_H	fmacros.h	2;"	d
+_UTIL_H_	util.h	2;"	d
+_XOPEN_SOURCE	fmacros.h	7;"	d
+_XOPEN_SOURCE	fmacros.h	9;"	d
+__AE_H__	ae.h	34;"	d
+__CONFIG_H	config.h	2;"	d
+__ZMALLOC_H	zmalloc.h	32;"	d
+__str	zmalloc.h	36;"	d
+__xstr	zmalloc.h	35;"	d
+_policy_parser_actions	policy.c	/^static const char _policy_parser_actions[] = {$/;"	v	file:
+_policy_parser_eof_actions	policy.c	/^static const char _policy_parser_eof_actions[] = {$/;"	v	file:
+_policy_parser_index_offsets	policy.c	/^static const short _policy_parser_index_offsets[] = {$/;"	v	file:
+_policy_parser_indicies	policy.c	/^static const char _policy_parser_indicies[] = {$/;"	v	file:
+_policy_parser_key_offsets	policy.c	/^static const unsigned char _policy_parser_key_offsets[] = {$/;"	v	file:
+_policy_parser_range_lengths	policy.c	/^static const char _policy_parser_range_lengths[] = {$/;"	v	file:
+_policy_parser_single_lengths	policy.c	/^static const char _policy_parser_single_lengths[] = {$/;"	v	file:
+_policy_parser_trans_actions	policy.c	/^static const char _policy_parser_trans_actions[] = {$/;"	v	file:
+_policy_parser_trans_keys	policy.c	/^static const char _policy_parser_trans_keys[] = {$/;"	v	file:
+_policy_parser_trans_targs	policy.c	/^static const char _policy_parser_trans_targs[] = {$/;"	v	file:
+_rfds	ae_select.c	/^    fd_set _rfds, _wfds;$/;"	m	struct:aeApiState	file:
+_wfds	ae_select.c	/^    fd_set _rfds, _wfds;$/;"	m	struct:aeApiState	file:
+addr	policy.h	/^  char *addr;$/;"	m	struct:Hostent
+addr_p	policy.c	/^static int addr_p;$/;"	v	file:
+aeAddMillisecondsToNow	ae.c	/^static void aeAddMillisecondsToNow(long long milliseconds, long *sec, long *ms) {$/;"	f	file:
+aeApiAddEvent	ae_epoll.c	/^static int aeApiAddEvent(aeEventLoop *eventLoop, int fd, int mask) {$/;"	f	file:
+aeApiAddEvent	ae_kqueue.c	/^static int aeApiAddEvent(aeEventLoop *eventLoop, int fd, int mask) {$/;"	f	file:
+aeApiAddEvent	ae_select.c	/^static int aeApiAddEvent(aeEventLoop *eventLoop, int fd, int mask) {$/;"	f	file:
+aeApiCreate	ae_epoll.c	/^static int aeApiCreate(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiCreate	ae_kqueue.c	/^static int aeApiCreate(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiCreate	ae_select.c	/^static int aeApiCreate(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiDelEvent	ae_epoll.c	/^static void aeApiDelEvent(aeEventLoop *eventLoop, int fd, int delmask) {$/;"	f	file:
+aeApiDelEvent	ae_kqueue.c	/^static void aeApiDelEvent(aeEventLoop *eventLoop, int fd, int mask) {$/;"	f	file:
+aeApiDelEvent	ae_select.c	/^static void aeApiDelEvent(aeEventLoop *eventLoop, int fd, int mask) {$/;"	f	file:
+aeApiFree	ae_epoll.c	/^static void aeApiFree(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiFree	ae_kqueue.c	/^static void aeApiFree(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiFree	ae_select.c	/^static void aeApiFree(aeEventLoop *eventLoop) {$/;"	f	file:
+aeApiName	ae_epoll.c	/^static char *aeApiName(void) {$/;"	f	file:
+aeApiName	ae_kqueue.c	/^static char *aeApiName(void) {$/;"	f	file:
+aeApiName	ae_select.c	/^static char *aeApiName(void) {$/;"	f	file:
+aeApiPoll	ae_epoll.c	/^static int aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp) {$/;"	f	file:
+aeApiPoll	ae_kqueue.c	/^static int aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp) {$/;"	f	file:
+aeApiPoll	ae_select.c	/^static int aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp) {$/;"	f	file:
+aeApiState	ae_epoll.c	/^typedef struct aeApiState {$/;"	s	file:
+aeApiState	ae_epoll.c	/^} aeApiState;$/;"	t	typeref:struct:aeApiState	file:
+aeApiState	ae_kqueue.c	/^typedef struct aeApiState {$/;"	s	file:
+aeApiState	ae_kqueue.c	/^} aeApiState;$/;"	t	typeref:struct:aeApiState	file:
+aeApiState	ae_select.c	/^typedef struct aeApiState {$/;"	s	file:
+aeApiState	ae_select.c	/^} aeApiState;$/;"	t	typeref:struct:aeApiState	file:
+aeBeforeSleepProc	ae.h	/^typedef void aeBeforeSleepProc(struct aeEventLoop *eventLoop);$/;"	t
+aeCreateEventLoop	ae.c	/^aeEventLoop *aeCreateEventLoop(int setsize) {$/;"	f
+aeCreateFileEvent	ae.c	/^int aeCreateFileEvent(aeEventLoop *eventLoop, int fd, int mask,$/;"	f
+aeCreateTimeEvent	ae.c	/^long long aeCreateTimeEvent(aeEventLoop *eventLoop, long long milliseconds,$/;"	f
+aeDeleteEventLoop	ae.c	/^void aeDeleteEventLoop(aeEventLoop *eventLoop) {$/;"	f
+aeDeleteFileEvent	ae.c	/^void aeDeleteFileEvent(aeEventLoop *eventLoop, int fd, int mask)$/;"	f
+aeDeleteTimeEvent	ae.c	/^int aeDeleteTimeEvent(aeEventLoop *eventLoop, long long id)$/;"	f
+aeEventFinalizerProc	ae.h	/^typedef void aeEventFinalizerProc(struct aeEventLoop *eventLoop, void *clientData);$/;"	t
+aeEventLoop	ae.h	/^typedef struct aeEventLoop {$/;"	s
+aeEventLoop	ae.h	/^} aeEventLoop;$/;"	t	typeref:struct:aeEventLoop
+aeFileEvent	ae.h	/^typedef struct aeFileEvent {$/;"	s
+aeFileEvent	ae.h	/^} aeFileEvent;$/;"	t	typeref:struct:aeFileEvent
+aeFileProc	ae.h	/^typedef void aeFileProc(struct aeEventLoop *eventLoop, int fd, void *clientData, int mask);$/;"	t
+aeFiredEvent	ae.h	/^typedef struct aeFiredEvent {$/;"	s
+aeFiredEvent	ae.h	/^} aeFiredEvent;$/;"	t	typeref:struct:aeFiredEvent
+aeGetApiName	ae.c	/^char *aeGetApiName(void) {$/;"	f
+aeGetFileEvents	ae.c	/^int aeGetFileEvents(aeEventLoop *eventLoop, int fd) {$/;"	f
+aeGetTime	ae.c	/^static void aeGetTime(long *seconds, long *milliseconds)$/;"	f	file:
+aeMain	ae.c	/^void aeMain(aeEventLoop *eventLoop) {$/;"	f
+aeProcessEvents	ae.c	/^int aeProcessEvents(aeEventLoop *eventLoop, int flags)$/;"	f
+aeSearchNearestTimer	ae.c	/^static aeTimeEvent *aeSearchNearestTimer(aeEventLoop *eventLoop)$/;"	f	file:
+aeSetBeforeSleepProc	ae.c	/^void aeSetBeforeSleepProc(aeEventLoop *eventLoop, aeBeforeSleepProc *beforesleep) {$/;"	f
+aeStop	ae.c	/^void aeStop(aeEventLoop *eventLoop) {$/;"	f
+aeTimeEvent	ae.h	/^typedef struct aeTimeEvent {$/;"	s
+aeTimeEvent	ae.h	/^} aeTimeEvent;$/;"	t	typeref:struct:aeTimeEvent
+aeTimeProc	ae.h	/^typedef int aeTimeProc(struct aeEventLoop *eventLoop, long long id, void *clientData);$/;"	t
+aeWait	ae.c	/^int aeWait(int fd, int mask, long long milliseconds) {$/;"	f
+anetCreateSocket	anet.c	/^static int anetCreateSocket(char *err, int domain) {$/;"	f	file:
+anetGenericAccept	anet.c	/^static int anetGenericAccept(char *err, int s, struct sockaddr *sa, socklen_t *len) {$/;"	f	file:
+anetListen	anet.c	/^static int anetListen(char *err, int s, struct sockaddr *sa, socklen_t len) {$/;"	f	file:
+anetNonBlock	anet.c	/^int anetNonBlock(char *err, int fd)$/;"	f
+anetPeerToString	anet.c	/^int anetPeerToString(int fd, char *ip, int *port) {$/;"	f
+anetRead	anet.c	/^int anetRead(int fd, char *buf, int count)$/;"	f
+anetResolve	anet.c	/^int anetResolve(char *err, char *host, char *ipbuf)$/;"	f
+anetSetError	anet.c	/^static void anetSetError(char *err, const char *fmt, ...)$/;"	f	file:
+anetSetSendBuffer	anet.c	/^int anetSetSendBuffer(char *err, int fd, int buffsize)$/;"	f
+anetTcpAccept	anet.c	/^int anetTcpAccept(char *err, int s, char *ip, int *port) {$/;"	f
+anetTcpConnect	anet.c	/^int anetTcpConnect(char *err, char *addr, int port)$/;"	f
+anetTcpGenericConnect	anet.c	/^static int anetTcpGenericConnect(char *err, char *addr, int port, int flags)$/;"	f	file:
+anetTcpKeepAlive	anet.c	/^int anetTcpKeepAlive(char *err, int fd)$/;"	f
+anetTcpNoDelay	anet.c	/^int anetTcpNoDelay(char *err, int fd)$/;"	f
+anetTcpNonBlockConnect	anet.c	/^int anetTcpNonBlockConnect(char *err, char *addr, int port)$/;"	f
+anetTcpServer	anet.c	/^int anetTcpServer(char *err, int port, char *bindaddr)$/;"	f
+anetUnixAccept	anet.c	/^int anetUnixAccept(char *err, int s) {$/;"	f
+anetUnixConnect	anet.c	/^int anetUnixConnect(char *err, char *path)$/;"	f
+anetUnixGenericConnect	anet.c	/^int anetUnixGenericConnect(char *err, char *path, int flags)$/;"	f
+anetUnixNonBlockConnect	anet.c	/^int anetUnixNonBlockConnect(char *err, char *path)$/;"	f
+anetUnixServer	anet.c	/^int anetUnixServer(char *err, char *path, mode_t perm)$/;"	f
+anetWrite	anet.c	/^int anetWrite(int fd, char *buf, int count)$/;"	f
+anet_error	tcpproxy.c	/^static char anet_error[1024];$/;"	v	file:
+aof_fsync	config.h	34;"	d
+aof_fsync	config.h	36;"	d
+apidata	ae.h	/^    void *apidata; \/* This is used for polling API specific data *\/$/;"	m	struct:aeEventLoop
+beforesleep	ae.h	/^    aeBeforeSleepProc *beforesleep;$/;"	m	struct:aeEventLoop
+blist	tcpproxy.c	/^    BufferList*blist;$/;"	m	struct:proxy_client	file:
+calloc	zmalloc.c	60;"	d	file:
+calloc	zmalloc.c	65;"	d	file:
+clientData	ae.h	/^    void *clientData;$/;"	m	struct:aeFileEvent
+clientData	ae.h	/^    void *clientData;$/;"	m	struct:aeTimeEvent
+cs	policy.h	/^  int cs;$/;"	m	struct:Policy
+curhost	policy.h	/^  int curhost;$/;"	m	struct:Policy
+data	util.h	/^    char data[BUFFER_CHUNK_SIZE];$/;"	m	struct:BufferListNode
+el	tcpproxy.c	/^aeEventLoop*el;$/;"	v
+eof	policy.h	/^  const char *p, *pe, *eof;$/;"	m	struct:Policy
+epfd	ae_epoll.c	/^    int epfd;$/;"	m	struct:aeApiState	file:
+events	ae.h	/^    aeFileEvent *events; \/* Registered events *\/$/;"	m	struct:aeEventLoop
+events	ae_epoll.c	/^    struct epoll_event *events;$/;"	m	struct:aeApiState	typeref:struct:aeApiState::epoll_event	file:
+events	ae_kqueue.c	/^    struct kevent *events;$/;"	m	struct:aeApiState	typeref:struct:aeApiState::kevent	file:
+fd	ae.h	/^    int fd;$/;"	m	struct:aeFiredEvent
+fd	tcpproxy.c	/^    int fd;$/;"	m	struct:proxy_client	file:
+finalizerProc	ae.h	/^    aeEventFinalizerProc *finalizerProc;$/;"	m	struct:aeTimeEvent
+fired	ae.h	/^    aeFiredEvent *fired; \/* Fired events *\/$/;"	m	struct:aeEventLoop
+flags	tcpproxy.c	/^    int flags;$/;"	m	struct:proxy_client	file:
+free	zmalloc.c	62;"	d	file:
+free	zmalloc.c	67;"	d	file:
+have_addr	policy.c	/^static int have_addr;$/;"	v	file:
+head	util.h	/^    BufferListNode*head;$/;"	m	struct:BufferList
+host	policy.c	/^static Hostent host;$/;"	v	file:
+hosts	policy.h	/^  Hostent *hosts;$/;"	m	struct:Policy
+id	ae.h	/^    long long id; \/* time event identifier. *\/$/;"	m	struct:aeTimeEvent
+kCritical	util.h	/^    kCritical,$/;"	e	enum:LogLevel
+kDebug	util.h	/^    kDebug,$/;"	e	enum:LogLevel
+kError	util.h	/^    kError,$/;"	e	enum:LogLevel
+kFatal	util.h	/^    kFatal,$/;"	e	enum:LogLevel
+kInfo	util.h	/^    kInfo,$/;"	e	enum:LogLevel
+kNone	util.h	/^    kNone=0,$/;"	e	enum:LogLevel
+kWarning	util.h	/^    kWarning,$/;"	e	enum:LogLevel
+kqfd	ae_kqueue.c	/^    int kqfd;$/;"	m	struct:aeApiState	file:
+listen	policy.h	/^  Hostent listen;$/;"	m	struct:Policy
+log_file	util.c	/^static FILE*log_file=NULL;$/;"	v	file:
+log_level	util.c	/^static LogLevel log_level=kDebug;$/;"	v	file:
+main	tcpproxy.c	/^int main(int argc,char**argv)$/;"	f
+malloc	zmalloc.c	59;"	d	file:
+malloc	zmalloc.c	64;"	d	file:
+mask	ae.h	/^    int mask; \/* one of AE_(READABLE|WRITABLE) *\/$/;"	m	struct:aeFileEvent
+mask	ae.h	/^    int mask;$/;"	m	struct:aeFiredEvent
+maxfd	ae.h	/^    int maxfd;   \/* highest file descriptor currently registered *\/$/;"	m	struct:aeEventLoop
+next	ae.h	/^    struct aeTimeEvent *next;$/;"	m	struct:aeTimeEvent	typeref:struct:aeTimeEvent::aeTimeEvent
+next	util.h	/^    struct BufferListNode*next;$/;"	m	struct:BufferListNode	typeref:struct:BufferListNode::BufferListNode
+nhost	policy.h	/^  int nhost;$/;"	m	struct:Policy
+now_str	util.c	/^static char now_str[sizeof("2011\/11\/11 11:11:11")];$/;"	v	file:
+obj	Makefile	/^obj=proxy$/;"	m
+p	policy.h	/^  const char *p, *pe, *eof;$/;"	m	struct:Policy
+pe	policy.h	/^  const char *p, *pe, *eof;$/;"	m	struct:Policy
+policy	tcpproxy.c	/^Policy *policy;$/;"	v
+policy_parser_en_main	policy.c	/^static const int policy_parser_en_main = 1;$/;"	v	file:
+policy_parser_error	policy.c	/^static const int policy_parser_error = 0;$/;"	v	file:
+policy_parser_first_final	policy.c	/^static const int policy_parser_first_final = 99;$/;"	v	file:
+policy_parser_start	policy.c	/^static const int policy_parser_start = 1;$/;"	v	file:
+port	policy.h	/^  int port;$/;"	m	struct:Hostent
+processTimeEvents	ae.c	/^static int processTimeEvents(aeEventLoop *eventLoop) {$/;"	f	file:
+proxy_client	tcpproxy.c	/^typedef struct proxy_client{$/;"	s	file:
+proxy_client	tcpproxy.c	/^}proxy_client;$/;"	t	typeref:struct:proxy_client	file:
+read_pos	util.h	/^    int read_pos;             $/;"	m	struct:BufferList
+realloc	zmalloc.c	61;"	d	file:
+realloc	zmalloc.c	66;"	d	file:
+remote	tcpproxy.c	/^    struct proxy_client*remote;$/;"	m	struct:proxy_client	typeref:struct:proxy_client::proxy_client	file:
+rfds	ae_select.c	/^    fd_set rfds, wfds;$/;"	m	struct:aeApiState	file:
+rfileProc	ae.h	/^    aeFileProc *rfileProc;$/;"	m	struct:aeFileEvent
+setsize	ae.h	/^    int setsize; \/* max number of file descriptors tracked *\/$/;"	m	struct:aeEventLoop
+size	util.h	/^    int size; \/\/how many byte this node has stored$/;"	m	struct:BufferListNode
+stop	ae.h	/^    int stop;$/;"	m	struct:aeEventLoop
+tail	util.h	/^    BufferListNode*tail;$/;"	m	struct:BufferList
+timeEventHead	ae.h	/^    aeTimeEvent *timeEventHead;$/;"	m	struct:aeEventLoop
+timeEventNextId	ae.h	/^    long long timeEventNextId;$/;"	m	struct:aeEventLoop
+timeProc	ae.h	/^    aeTimeProc *timeProc;$/;"	m	struct:aeTimeEvent
+type	policy.h	/^  int type;$/;"	m	struct:Policy
+update_zmalloc_stat_add	zmalloc.c	71;"	d	file:
+update_zmalloc_stat_add	zmalloc.c	74;"	d	file:
+update_zmalloc_stat_alloc	zmalloc.c	88;"	d	file:
+update_zmalloc_stat_free	zmalloc.c	98;"	d	file:
+update_zmalloc_stat_sub	zmalloc.c	72;"	d	file:
+update_zmalloc_stat_sub	zmalloc.c	80;"	d	file:
+used_memory	zmalloc.c	/^static size_t used_memory = 0;$/;"	v	file:
+used_memory_mutex	zmalloc.c	/^pthread_mutex_t used_memory_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+wfds	ae_select.c	/^    fd_set rfds, wfds;$/;"	m	struct:aeApiState	file:
+wfileProc	ae.h	/^    aeFileProc *wfileProc;$/;"	m	struct:aeFileEvent
+when_ms	ae.h	/^    long when_ms; \/* milliseconds *\/$/;"	m	struct:aeTimeEvent
+when_sec	ae.h	/^    long when_sec; \/* seconds *\/$/;"	m	struct:aeTimeEvent
+write_node	util.h	/^    BufferListNode*write_node;\/\/last node that have data right now$/;"	m	struct:BufferList
+zcalloc	zmalloc.c	/^void *zcalloc(size_t size) {$/;"	f
+zfree	zmalloc.c	/^void zfree(void *ptr) {$/;"	f
+zlibc_free	zmalloc.c	/^void zlibc_free(void *ptr) {$/;"	f
+zmalloc	zmalloc.c	/^void *zmalloc(size_t size) {$/;"	f
+zmalloc_enable_thread_safeness	zmalloc.c	/^void zmalloc_enable_thread_safeness(void) {$/;"	f
+zmalloc_get_fragmentation_ratio	zmalloc.c	/^float zmalloc_get_fragmentation_ratio(void) {$/;"	f
+zmalloc_get_rss	zmalloc.c	/^size_t zmalloc_get_rss(void) {$/;"	f
+zmalloc_oom	zmalloc.c	/^static void zmalloc_oom(size_t size) {$/;"	f	file:
+zmalloc_size	zmalloc.c	/^size_t zmalloc_size(void *ptr) {$/;"	f
+zmalloc_size	zmalloc.h	43;"	d
+zmalloc_size	zmalloc.h	54;"	d
+zmalloc_size	zmalloc.h	62;"	d
+zmalloc_thread_safe	zmalloc.c	/^static int zmalloc_thread_safe = 0;$/;"	v	file:
+zmalloc_used_memory	zmalloc.c	/^size_t zmalloc_used_memory(void) {$/;"	f
+zrealloc	zmalloc.c	/^void *zrealloc(void *ptr, size_t size) {$/;"	f
+zstrdup	zmalloc.c	/^char *zstrdup(const char *s) {$/;"	f

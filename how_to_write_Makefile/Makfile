@@ -1,0 +1,85 @@
+CC=cc
+LINK=$(CC)
+CFLAGS=-Wall -O0 -g 
+LDFLAGS=
+
+DIR=.
+INCS=-I $(DIR)/src
+DEPS=
+
+src_dir=$(DIR)/src
+obj_dir=$(DIR)/obj
+
+src_src1_dir=$(src_dir)/src1
+src_src2_dir=$(src_dir)/src2
+src_src3_dir=$(src_dir)/src3
+
+obj_obj1_dir=$(obj_dir)/obj1
+obj_obj2_dir=$(obj_dir)/obj2
+obj_obj3_dir=$(obj_dir)/obj3
+
+
+obj_obj1=$(obj_obj1_dir)/s11.o \
+	 $(obj_obj1_dir)/s12.o \
+	 $(obj_obj1_dir)/s13.o 
+
+obj_obj2=$(obj_obj2_dir)/s21.o \
+	 $(obj_obj2_dir)/s22.o \
+	 $(obj_obj2_dir)/s23.o 
+
+obj_obj3=$(obj_obj3_dir)/s31.o \
+	 $(obj_obj3_dir)/s32.o \
+	 $(obj_obj3_dir)/s33.o 
+
+exe1=$(obj_dir)/chat1
+exe2=$(obj_dir)/chat2
+
+all:$(exe1) $(exe2)
+
+$(exe1): $(obj_obj1) $(obj_obj2) $(obj_obj3) 
+	$(LINK) -o $(exe1) $(obj_obj1) $(obj_obj2) $(obj_obj3)
+
+$(exe2): $(obj_obj1) $(obj_obj2) $(obj_obj3) 
+	$(LINK) -o $(exe2) $(obj_obj1) $(obj_obj2) $(obj_obj3)
+
+
+$(obj_obj1_dir)/s11.o:$(deps) $(src_src1_dir)/s11.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj1_dir)/s11.o $(src_src1_dir)/s11.c
+
+$(obj_obj1_dir)/s12.o:$(deps) $(src_src1_dir)/s12.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj1_dir)/s12.o $(src_src1_dir)/s12.c
+
+$(obj_obj1_dir)/s13.o:$(deps) $(src_src1_dir)/s13.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj1_dir)/s13.o $(src_src1_dir)/s13.c
+
+$(obj_obj2_dir)/s21.o:$(deps) $(src_src2_dir)/s21.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj2_dir)/s21.o $(src_src2_dir)/s21.c
+
+$(obj_obj2_dir)/s22.o:$(deps) $(src_src2_dir)/s22.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj2_dir)/s22.o $(src_src2_dir)/s22.c
+
+$(obj_obj2_dir)/s23.o:$(deps) $(src_src2_dir)/s23.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj2_dir)/s23.o $(src_src2_dir)/s23.c
+
+$(obj_obj3_dir)/s31.o:$(deps) $(src_src3_dir)/s31.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj3_dir)/s31.o $(src_src3_dir)/s31.c
+
+$(obj_obj3_dir)/s32.o:$(deps) $(src_src3_dir)/s32.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj3_dir)/s32.o $(src_src3_dir)/s32.c
+
+$(obj_obj3_dir)/s33.o:$(deps) $(src_src3_dir)/s33.h 
+	$(CC) -c $(CFLAGS) $(INCS) \
+	    -o $(obj_obj3_dir)/s33.o $(src_src3_dir)/s33.c
+
+clean:
+	rm -rf $(obj_obj1_dir)/* $(obj_obj2_dir)/* $(obj_obj3_dir)/* $(exe1) $(exe2)
+
+

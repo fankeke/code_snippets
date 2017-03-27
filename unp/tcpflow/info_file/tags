@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+PROTOCL_NUM	summary.h	9;"	d
+PROTO_ARP_	summary.h	18;"	d
+PROTO_DNS_	summary.h	22;"	d
+PROTO_HTTP_	summary.h	24;"	d
+PROTO_ICMP_	summary.h	20;"	d
+PROTO_IP_	summary.h	19;"	d
+PROTO_SSL_	summary.h	25;"	d
+PROTO_TCP_	summary.h	23;"	d
+PROTO_UDP_	summary.h	21;"	d
+__SUMMARY_H	summary.h	2;"	d
+byte_percent	summary.h	/^    float byte_percent;$/;"	m	struct:pkt_type	access:public
+create_summary_file	summary.c	/^FILE*create_summary_file()$/;"	f
+create_summmay_file	summary.h	/^FILE* create_summmay_file();$/;"	p	signature:()
+fp_summary	summary.c	/^FILE* fp_summary;$/;"	v
+name	summary.h	/^    char name[10];$/;"	m	struct:pkt_type	access:public
+number_percent	summary.h	/^    float number_percent;$/;"	m	struct:pkt_type	access:public
+packet_bytes	summary.h	/^    int packet_bytes;$/;"	m	struct:pkt_type	access:public
+packet_number	summary.h	/^    int packet_number;$/;"	m	struct:pkt_type	access:public
+pkt_type	summary.h	/^struct pkt_type$/;"	s
+pkt_type::byte_percent	summary.h	/^    float byte_percent;$/;"	m	struct:pkt_type	access:public
+pkt_type::name	summary.h	/^    char name[10];$/;"	m	struct:pkt_type	access:public
+pkt_type::number_percent	summary.h	/^    float number_percent;$/;"	m	struct:pkt_type	access:public
+pkt_type::packet_bytes	summary.h	/^    int packet_bytes;$/;"	m	struct:pkt_type	access:public
+pkt_type::packet_number	summary.h	/^    int packet_number;$/;"	m	struct:pkt_type	access:public
+protocl_types	summary.c	/^static struct pkt_type protocl_types[]={$/;"	v	typeref:struct:pkt_type	file:
+update_pkt_type	summary.c	/^void update_pkt_type(int type,int len)$/;"	f	signature:(int type,int len)
+update_pkt_type	summary.h	/^void update_pkt_type(int type,int length);$/;"	p	signature:(int type,int length)
+update_summary_file	summary.c	/^void update_summary_file(FILE*fp)$/;"	f	signature:(FILE*fp)
+write_summary_file	summary.c	/^void write_summary_file()$/;"	f
+write_summary_file	summary.h	/^void write_summary_file();$/;"	p	signature:()
